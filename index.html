@@ -10,12 +10,14 @@
     <meta property="og:description" content="Experiências únicas e pacotes turísticos personalizados no Rio de Janeiro.">
     <meta property="og:image" content="https://www.seusite.com/imgs/og-image.jpg">
     <meta property="og:url" content="https://www.seusite.com">
+    <link rel="Logo" type="image/jpg" href="imgs/logo-turistando.jpg">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>Turistando - Descubra o Mundo</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="Logo" type="image/png" href="imgs/logo-turistando.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <header>
@@ -40,39 +42,39 @@
 
     <main>
         <section id="home" class="hero">
-            <div class="hero-content">
+            <div class="hero-content" data-aos="fade-right" data-aos-delay="300">
                 <h1>Conheça o Rio de Janeiro com a Turistando!</h1>
                 <p>Experiências únicas, destinos deslumbrantes e memórias inesquecíveis.</p>
                 <a href="#pacotes" class="cta-button">Explore Nossos Pacotes</a>
             </div>
         </section>
 
-        <section id="destinos" class="destinos">
+        <section id="destinos" class="destinos" data-aos="fade-up">
             <h2>Destinos Populares</h2>
             <div class="destinos-grid">
                 <!-- Cards de destinos -->
-                <div class="destino-card">
+                <div class="destino-card" data-aos="flip-left" data-aos-delay="100">
                     <img src="imgs/copacabana.jpg" alt="Praia de Copacabana">
                     <h3>Copacabana</h3>
                     <p>Desfrute das famosas areias e do calçadão icônico de Copacabana.</p>
                     <a href="#" class="btn-saiba-mais">Saiba Mais</a>
                 </div>
                 
-                <div class="destino-card">
+                <div class="destino-card" data-aos="flip-left" data-aos-delay="200">
                     <img src="imgs/cristo.jpeg" alt="Cristo Redentor">
                     <h3>Cristo Redentor</h3>
                     <p>Visite uma das Sete Maravilhas do Mundo Moderno e aprecie a vista panorâmica.</p>
                     <a href="#" class="btn-saiba-mais">Saiba Mais</a>
                 </div>
                 
-                <div class="destino-card">
+                <div class="destino-card" data-aos="flip-left" data-aos-delay="300">
                     <img src="imgs/sugarloaf.jpg" alt="Pão de Açúcar">
                     <h3>Pão de Açúcar</h3>
                     <p>Suba de bondinho e contemple a beleza da Baía de Guanabara.</p>
                     <a href="#" class="btn-saiba-mais">Saiba Mais</a>
                 </div>
                 
-                <div class="destino-card">
+                <div class="destino-card" data-aos="flip-left" data-aos-delay="400">
                     <img src="imgs/maracana.jpg" alt="Estádio do Maracanã">
                     <h3>Maracanã</h3>
                     <p>Conheça o lendário estádio e sinta a paixão do futebol brasileiro.</p>
@@ -81,76 +83,76 @@
             </div>
         </section>
 
-        <section id="pacotes" class="pacotes">
+        <section id="pacotes" class="pacotes" data-aos="fade-up">
             <h2>Pacote Completo: Rolê de Cria!</h2>
             <div class="pacote-info">
                 <p>Explore o melhor do Rio de Janeiro com nosso pacote completo, incluindo visitas a:</p>
             </div>
             <div class="pacote-grid">
-                <div class="pacote-item">
+                <div class="pacote-item" data-aos="zoom-in" data-aos-delay="100">
                     <img src="imgs/boulevard.jpg" alt="Boulevard Olímpico">
                     <h3>Boulevard Olímpico</h3>
                 </div>
-                <div class="pacote-item">
+                <div class="pacote-item" data-aos="zoom-in" data-aos-delay="200">
                     <img src="imgs/catete.jpg" alt="Palácio do Catete">
                     <h3>Palácio do Catete</h3>
                 </div>
-                <div class="pacote-item">
+                <div class="pacote-item" data-aos="zoom-in" data-aos-delay="300">
                     <img src="imgs/cdd.jpg" alt="Cidade de Deus">
                     <h3>Cidade de Deus</h3>
                 </div>
-                <div class="pacote-item">
+                <div class="pacote-item" data-aos="zoom-in" data-aos-delay="400">
                     <img src="imgs/copacabana.jpg" alt="Praia de Copacabana">
                     <h3>Praia de Copacabana</h3>
                 </div>
-                <div class="pacote-item">
+                <div class="pacote-item" data-aos="zoom-in" data-aos-delay="500">
                     <img src="imgs/cristo.jpeg" alt="Cristo Redentor">
                     <h3>Cristo Redentor</h3>
                 </div>
-                <div class="pacote-item">
+                <div class="pacote-item" data-aos="zoom-in" data-aos-delay="600">
                     <img src="imgs/ipanema.jpg" alt="Praia de Ipanema">
                     <h3>Praia de Ipanema</h3>
                 </div>
-                <div class="pacote-item">
+                <div class="pacote-item" data-aos="zoom-in" data-aos-delay="700">
                     <img src="imgs/jardimbotanico.jpg" alt="Jardim Botânico">
                     <h3>Jardim Botânico</h3>
                 </div>
-                <div class="pacote-item">
+                <div class="pacote-item" data-aos="zoom-in" data-aos-delay="800">
                     <img src="imgs/lapa.jpg" alt="Arcos da Lapa">
                     <h3>Arcos da Lapa</h3>
                 </div>
-                <div class="pacote-item">
+                <div class="pacote-item" data-aos="zoom-in" data-aos-delay="900">
                     <img src="imgs/maracana.jpg" alt="Estádio do Maracanã">
                     <h3>Estádio do Maracanã</h3>
                 </div>
-                <div class="pacote-item">
+                <div class="pacote-item" data-aos="zoom-in" data-aos-delay="1000">
                     <img src="imgs/museudoamanha.jpg" alt="Museu do Amanhã">
                     <h3>Museu do Amanhã</h3>
                 </div>
-                <div class="pacote-item">
+                <div class="pacote-item" data-aos="zoom-in" data-aos-delay="1100">
                     <img src="imgs/rocinha.jpg" alt="Favela da Rocinha">
                     <h3>Favela da Rocinha</h3>
                 </div>
-                <div class="pacote-item">
+                <div class="pacote-item" data-aos="zoom-in" data-aos-delay="1200">
                     <img src="imgs/santateresa.jpg" alt="Bairro Santa Teresa">
                     <h3>Bairro Santa Teresa</h3>
                 </div>
-                <div class="pacote-item">
+                <div class="pacote-item" data-aos="zoom-in" data-aos-delay="1300">
                     <img src="imgs/sugarloaf.jpg" alt="Pão de Açúcar">
                     <h3>Pão de Açúcar</h3>
                 </div>
-                <div class="pacote-item">
+                <div class="pacote-item" data-aos="zoom-in" data-aos-delay="1400">
                     <img src="imgs/tijuca.jpg" alt="Floresta da Tijuca">
                     <h3>Floresta da Tijuca</h3>
                 </div>
             </div>
             <div class="pacote-cta">
                 <p>Não perca a chance de conhecer todos esses lugares incríveis!</p>
-                <a href="compra.html" class="btn-reservar">Comprar Agora</a>
+                <a href="compra.html" class="btn-reservar" data-aos="fade-up" data-aos-delay="200">Comprar Agora</a>
             </div>
         </section>
 
-        <section id="sobre" class="sobre">
+        <section id="sobre" class="sobre" data-aos="fade-up">
             <h2>Sobre a Turistando</h2>
             <div class="sobre-content">
                 <p>A Turistando é uma agência de viagens especializada em proporcionar experiências únicas e inesquecíveis no Rio de Janeiro. Desde 2024, temos o prazer de apresentar as maravilhas da Cidade Maravilhosa para visitantes de todo o mundo.</p>
@@ -205,33 +207,40 @@
         <section id="depoimentos" class="depoimentos">
             <h2>O Que Nossos Clientes Dizem</h2>
             <div class="depoimentos-carousel">
-                <div class="depoimento">
-                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Maria Silva" class="cliente-foto">
+                <div class="depoimento" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Maria Silva" class="cliente-foto">
                     <blockquote>
                         "A viagem ao Rio de Janeiro com a Turistando foi simplesmente maravilhosa! O pacote completo nos permitiu conhecer todos os pontos turísticos importantes e ainda tivemos tempo para relaxar nas praias. Recomendo muito!"
                     </blockquote>
                     <cite>Maria Silva, São Paulo</cite>
                 </div>
-                <div class="depoimento">
-                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="João Santos" class="cliente-foto">
+                <div class="depoimento" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="João Santos" class="cliente-foto">
                     <blockquote>
                         "Fiquei impressionado com a organização e atenção aos detalhes da Turistando. O guia turístico era muito conhecedor e nos mostrou lugares incríveis que não conheceríamos sozinhos. Voltarei certamente!"
                     </blockquote>
                     <cite>João Santos, Belo Horizonte</cite>
                 </div>
-                <div class="depoimento">
-                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80" alt="Ana Oliveira" class="cliente-foto">
+                <div class="depoimento" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://randomuser.me/api/portraits/women/95.jpg" alt="Ana Oliveira" class="cliente-foto">
                     <blockquote>
-                        "Como fotógrafa amadora, fiquei encantada com as oportunidades de fotos incríveis que tive durante a viagem. O pôr do sol no Arpoador e a vista do Cristo Redentor foram inesquecíveis. Obrigada, Viagens Incríveis!"
+                        "Como fotógrafa amadora, fiquei encantada com as oportunidades de fotos incríveis que tive durante a viagem. O pôr do sol no Arpoador e a vista do Cristo Redentor foram inesquecíveis. Obrigada, Turistando!"
                     </blockquote>
                     <cite>Ana Oliveira, Porto Alegre</cite>
                 </div>
-                <div class="depoimento">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="Carlos Mendes" class="cliente-foto">
+                <div class="depoimento" data-aos="fade-up" data-aos-delay="400">
+                    <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Carlos Ferreira" class="cliente-foto">
                     <blockquote>
-                        "Minha família e eu tivemos uma experiência incrível no Rio de Janeiro graças à Viagens Incríveis. O passeio pela Floresta da Tijuca foi inesquecível e as crianças adoraram o Pão de Açúcar. Já estamos planejando nossa próxima viagem com eles!"
+                        "A experiência na favela da Rocinha foi única e emocionante. A Turistando nos proporcionou uma visão autêntica e respeitosa da comunidade. Aprendi muito sobre a cultura local e a hospitalidade carioca."
                     </blockquote>
-                    <cite>Carlos Mendes, Curitiba</cite>
+                    <cite>Carlos Ferreira, Recife</cite>
+                </div>
+                <div class="depoimento" data-aos="fade-up" data-aos-delay="500">
+                    <img src="https://randomuser.me/api/portraits/women/89.jpg" alt="Fernanda Lima" class="cliente-foto">
+                    <blockquote>
+                        "A gastronomia carioca me surpreendeu! A Turistando nos levou a restaurantes incríveis, desde a tradicional feijoada até os modernos bares de Botafogo. Uma verdadeira jornada culinária!"
+                    </blockquote>
+                    <cite>Fernanda Lima, Curitiba</cite>
                 </div>
             </div>
         </section>
@@ -247,7 +256,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer data-aos="fade-up">
         <div class="footer-content">
             <div class="footer-section">
                 <h3>Turistando</h3>
@@ -271,9 +280,14 @@
         </div>
         <div class="footer-bottom">
             <p>&copy; 2024 Turistando. Todos os direitos reservados.</p>
+            <ul class="footer-links">
+                <li><a href="privacidade.html">Política de Privacidade</a></li>
+                <li><a href="termos.html">Termos de Uso</a></li>
+            </ul>
         </div>
     </footer>
 
     <script src="script.js"></script>
+    <script src="nav.js"></script>
 </body>
 </html>

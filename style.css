@@ -1,6 +1,6 @@
 :root {
     --primary-color: #3498db;
-    --secondary-color: #2ecc71;
+    --secondary-color: #000000;
     --text-color: #333;
     --bg-color: #f4f4f4;
 }
@@ -24,6 +24,7 @@ body {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
+    padding-top: 70px; /* Adiciona um padding-top igual à altura do cabeçalho */
 }
 
 @keyframes gradientBG {
@@ -57,17 +58,22 @@ main {
 /* Header e Navegação */
 header {
     background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     position: fixed;
     width: 100%;
+    top: 0;
     z-index: 1000;
+    height: 70px; /* Defina uma altura fixa para o cabeçalho */
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 5%;
+    padding: 0 10%;
+    height: 100%; /* Faz o nav ocupar toda a altura do header */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .logo img {
@@ -87,11 +93,12 @@ nav {
     text-decoration: none;
     color: var(--text-color);
     font-weight: bold;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .nav-links a:hover {
     color: var(--primary-color);
+    transform: translateY(-2px);
 }
 
 .burger {
@@ -112,7 +119,7 @@ nav {
     background-image: url('imgs/rj.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    min-height: calc(100vh - 70px); /* Ajusta a altura mínima do hero */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -136,6 +143,7 @@ nav {
     z-index: 1;
     max-width: 800px;
     padding: 2rem;
+    padding-top: 4rem; /* Aumenta o padding superior para dispositivos móveis */
 }
 
 .hero h1 {
@@ -188,19 +196,25 @@ h2 {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
 }
 
 .destino-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .destino-card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.destino-card:hover img {
+    transform: scale(1.05);
 }
 
 .destino-card h3 {
@@ -337,10 +351,10 @@ footer {
 /* Responsividade */
 @media screen and (max-width: 768px) {
     .nav-links {
-        position: absolute;
+        position: fixed;
         right: 0px;
-        height: 92vh;
-        top: 8vh;
+        height: calc(100vh - 70px); /* Ajusta a altura do menu móvel */
+        top: 70px; /* Posiciona o menu abaixo do cabeçalho */
         background-color: #fff;
         display: flex;
         flex-direction: column;
@@ -356,6 +370,14 @@ footer {
 
     .burger {
         display: block;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem; /* Reduz o tamanho da fonte para telas menores */
+    }
+
+    .hero-content {
+        padding-top: 6rem; /* Aumenta ainda mais o padding superior para telas menores */
     }
 }
 
@@ -424,6 +446,10 @@ footer {
     margin-top: 3rem;
 }
 
+.pacote-cta p {
+    margin-bottom: 1.5rem; /* Aumenta o espaço entre a frase e o botão */
+}
+
 .btn-reservar {
     display: inline-block;
     background-color: var(--primary-color);
@@ -466,6 +492,11 @@ footer {
     padding: 2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     scroll-snap-align: center;
+    transition: transform 0.3s ease;
+}
+
+.depoimento:hover {
+    transform: translateY(-5px);
 }
 
 .cliente-foto {
@@ -475,6 +506,7 @@ footer {
     object-fit: cover;
     margin: 0 auto 1rem;
     display: block;
+    border: 3px solid var(--primary-color);
 }
 
 .depoimento blockquote {
@@ -488,6 +520,20 @@ footer {
     display: block;
     text-align: right;
     color: #666;
+}
+
+@media (max-width: 768px) {
+    .depoimentos-carousel {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .depoimento {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 2rem;
+    }
 }
 
 .sobre {
