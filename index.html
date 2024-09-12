@@ -247,11 +247,16 @@
 
         <section id="contato" class="contato">
             <h2>ENTRE EM CONTATO</h2>
-            <form id="contato-form">
+            <form id="contato-form" action="https://formsubmit.co/turistando021@gmail.com" method="POST">
                 <input type="text" name="nome" placeholder="Seu Nome" required>
                 <input type="email" name="email" placeholder="Seu E-mail" required>
                 <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea>
                 <button type="submit">Enviar</button>
+                <input type="hidden" name="_subject" value="Mensagem Nova!">
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:61937/obrigado.html">
+              
             </form>
         </section>
     </main>
